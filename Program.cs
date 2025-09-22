@@ -38,7 +38,6 @@
                     account = new AdultAccount();
                 else
                     account = new StudentAccount();
-
                 account.AccountType();
 
 
