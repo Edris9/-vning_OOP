@@ -1,4 +1,6 @@
-﻿namespace Övning_OOP
+﻿using System.Security.Principal;
+
+namespace Övning_OOP
 {
     internal class Program
     {
@@ -6,7 +8,7 @@
         {
             Console.WriteLine("Hej välkommen till banken");
 
-            Console.WriteLine("Tryck 1 för att testa encapsulation:\nTryck 2 för att testa inheritance:\nTryck 3 för att testa polymorphism:");
+            Console.WriteLine("Tryck 1 för att testa encapsulation:\nTryck 2 för att testa inheritance:\nTryck 3 för att testa polymorphism:\nTryck 4 för att testa abstrayion.");
 
             string val = Console.ReadLine();
 
@@ -40,6 +42,23 @@
                 else
                     account = new StudentAccount();
                 account.AccountType();
+            }
+            else if (val == "4")
+            {
+                Console.WriteLine("Tryck 1 för att se din ränta.\nTryck 2 för att se dina avgifter.");
+                string choice = Console.ReadLine();
+
+                Account acou;
+                if (choice == "1")
+                {
+                    acou = new SavingsAccount();
+                }
+                else
+                {
+                    acou = new CheckingAccount();
+                }
+
+                acou.DisplayInfo();
             }
         }
     }
