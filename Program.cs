@@ -5,7 +5,12 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Hej välkommen till banken");
+ inheritance
             Console.WriteLine("Tryck 1 för att testa encapsulation:\nTryck 2 för att testa inheritance:\nTryck 3 för att testa polymorphism:");
+
+ inheritance
+            Console.WriteLine("Tryck 1 för att testa encapsulation:\nTryck 2 för att testa inheritance:");
+ master
 
             string val = Console.ReadLine();
 
@@ -28,6 +33,7 @@
                 student.Address = Console.ReadLine();
                 student.Askaboutnewobject();
             }
+inheritance
             else if (val == "3")
             {
                 Console.WriteLine("Ange kontotyp (1 - Vuxen, 2 - Student):");
@@ -44,6 +50,19 @@
 
 
             }
+
+
+            encapsulation_account_nnr account = new encapsulation_account_nnr();
+            account.GetPersonID(1234567890);
+            account.Deposit(1000);
+            account.Withdraw(500);
+            Console.WriteLine("Ditt saldo är: " + account.GetBalance());
+
+
+
+
+ master
+ master
         }
     }
 }
