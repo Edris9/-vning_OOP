@@ -5,7 +5,7 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Hej välkommen till banken");
-            Console.WriteLine("Tryck 1 för att testa encapsulation:\nTryck 2 för att testa inheritance:");
+            Console.WriteLine("Tryck 1 för att testa encapsulation:\nTryck 2 för att testa inheritance:\nTryck 3 för att testa polymorphism:");
 
             string val = Console.ReadLine();
 
@@ -27,6 +27,22 @@
                 Console.WriteLine("Ange adress:");
                 student.Address = Console.ReadLine();
                 student.Askaboutnewobject();
+            }
+            else if (val == "3")
+            {
+                Console.WriteLine("Ange kontotyp (1 - Vuxen, 2 - Student):");
+                string type = Console.ReadLine();
+
+                polymorphism account;
+                if (type == "1")
+                    account = new AdultAccount();
+                else
+                    account = new StudentAccount();
+
+                account.AccountType();
+
+
+
             }
         }
     }
