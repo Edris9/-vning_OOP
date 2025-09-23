@@ -3,7 +3,7 @@ name: PR .NET Build Check
 on:
   push:
     branches:
-      - main   
+      - master   
 
 jobs:
   build:
