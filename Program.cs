@@ -1,6 +1,4 @@
-﻿using System.Security.Principal;
-
-namespace Övning_OOP
+﻿namespace Övning_OOP
 {
     internal class Program
     {
@@ -8,7 +6,7 @@ namespace Övning_OOP
         {
             Console.WriteLine("Hej välkommen till banken");
 
-            Console.WriteLine("Tryck 1 för att testa encapsulation:\nTryck 2 för att testa inheritance:\nTryck 3 för att testa polymorphism:\nTryck 4 för att testa abstrayion.");
+            Console.WriteLine("Tryck 1 för att testa encapsulation:Tryck 2 för att testa inheritance:Tryck 3 för att testa polymorphism:Tryck 4 för att testa abstrayion.");
 
             string val = Console.ReadLine();
 
